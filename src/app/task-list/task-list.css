@@ -1,0 +1,56 @@
+.task-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-list button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
+.task-list button.toggle {
+  background-color: #17a2b8;
+}
+
+.task-list button.delete {
+  background-color: #dc3545;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem; /* space between buttons */
+}
+
+.addTask {
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+h2{
+    margin-left: 15px;
+}

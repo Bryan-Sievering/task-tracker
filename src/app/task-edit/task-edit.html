@@ -1,0 +1,18 @@
+<h2>Edit Task</h2>
+
+<form [formGroup]="taskForm" (ngSubmit)="submit()">
+  <label>Title: <input formControlName="title"></label><br>
+  <label>Description: <textarea formControlName="description"></textarea></label><br>
+  <label>Priority:
+    <select formControlName="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  </label><br>
+  <label>Due Date: <input type="date" formControlName="dueDate"></label><br>
+  <button type="submit">Save Changes</button>
+</form>
+
+<a [routerLink]="['/tasks', taskId]">Cancel</a>
+

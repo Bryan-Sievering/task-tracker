@@ -1,0 +1,16 @@
+<div *ngIf="task() as task">
+    <h2>{{task.title}}</h2>
+    <p>{{task.description}}</p>
+    <p>Priority: {{task.priority}}</p>
+    <p>Due: {{task.dueDate | date}}</p>
+    <p>Status: {{task.completed ? 'Completed' : 'Incomplete'}}</p>
+
+    <button (click)="toggleTaskComplete()">
+        Toggle Complete
+    </button><br>
+
+    <a [routerLink]="['/tasks', taskId, 'edit']">Edit Task</a><br>
+
+</div>
+
+<a [routerLink]="['/tasks']">Back to list</a>
